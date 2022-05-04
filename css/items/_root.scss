@@ -1,0 +1,40 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-accent: #14edb0;
+    --color-title: #324960;
+    --color-text: #98a3ad;
+    --color-light-gray: #faf9fe;
+    --color-dark-gray: #3c4e5f;
+    --bacground-gradient: radial-gradient(
+            46.5% 52.54% at 91.15% 82.5%,
+            rgba(107, 238, 201, 0.04) 44.27%,
+            rgba(198, 235, 234, 0.04) 44.28%
+        ),
+        conic-gradient(
+            from 114.79deg at 11.11% 69.25%,
+            #14edaf0c 0deg,
+            rgba(20, 237, 176, 0) 176.21deg,
+            rgba(20, 237, 176, 0) 360deg
+        ),
+        radial-gradient(
+            100% 100% at 71.15% 0%,
+            rgba(20, 237, 176, 0.03) 0%,
+            rgba(20, 237, 176, 0.03) 34.17%,
+            rgba(198, 235, 234, 0) 34.18%,
+            rgba(198, 235, 234, 0) 34.19%
+        ),
+        linear-gradient(90deg, #c6ebea 0%, #e5f1f1 100%);
+    --time-trans: 0.2s;
+    --font-family: "Montserrat", sans-serif;
+    --font-size-10: 0.675rem;
+    --font-size-14: 0.875rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-34: 2.125rem;
+    --font-size-18: 1.125rem;
+    --font-size-40: 2.5rem;
+    --font-size-48: 3rem;
+    --font-size-50: 3.125rem;
+}

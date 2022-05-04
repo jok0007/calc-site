@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Калькулятор</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header__top">
+      <div class="header__top-contant container">
+        <div class="header__top-burger"></div>
+        <nav class="header__top-menu">
+          <ul>
+            <li><a href="#"> Возможности</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Ответы на вопросы</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+79998886655" class="header__top-phone">
+          <span>8-999-888-77-66</span>
+        </a>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__content-image"></div>
+        <div class="header__content-info">
+          <span class="header__content-subtitle">Доступное и эффективное решение для приема заявок
+          </span>
+          <h1>
+            Онлайн калькулятор
+            <span>от 3000 рублей</span>
+          </h1>
+          <div class="header__content-pluses">
+            <ul>
+              <li>
+                <h3>Увеличение SEO-показателей</h3>
+                <p>Увеличивайте поведенческие покзатели и поднимайтесь в поисковой выдачи</p>
+              </li>
+              <li>
+                <h3>Удобство для клиентов</h3>
+                <p>
+                  Посетитель получает предварительный или точный расчет
+                  стоимоти товаров и услуг
+                </p>
+              </li>
+              <li>
+                <h3>Горячие заявки</h3>
+                <p>
+                  Получайте контакты заинтересованных клиентов на почту,
+                  телеграм или любые другие сервисы
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button class="button">Узнать больше</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about container">
+        <div class="about__content">
+          <div class="about__title">
+            <p>Привет! Меня зовут Андрей. Я занимаюсь разработкой и внедрением онлайн-калькуляторов.</p>
+          </div>
+          <div class="about__info">
+            <p>Также я разрабатываю квизы и формы обратной связи для сайтов.</p>
+            <p>Онлайн-калькулятор - отличный способо получать заявки прямо сайта. Использование на сайте калькулятора
+              увеличивает время нахождения пользователя на сайте, тем самым улучшаются поведеньческие факторы и
+              повышение позиций сайта в поисковой выдаче.</p>
+            <p>Калькулятор хороший вариант для отработки возражения "дорого". Клиент сам выбирает необходимые для него
+              параметры и понимает как формируется цена</p>
+          </div>
+        </div>
+      </section>
+      <section class="opportunities">
+        <div class="opportunities__content container">
+          <div class="opportunities__title">
+            <h2>
+              Возможности создаваемых мной онлайн-калькуляторов
+            </h2>
+            <p class="opportunities__info-text">
+              При создании онлайн-калькулятора разрабатывается только тот функционал,
+              который нужен для решения Ваших задач
+            </p>
+          </div>
+          <div class="opportunities__info">
+            <ul>
+              <li>Возможность самостоятельно изменять исходные данные</li>
+              <li>Создание многостраничных форм</li>
+              <li>Установка капчи перед отправкой</li>
+              <li>
+                Возможность последующей отправки данных через форму обратной
+                связи.
+              </li>
+              <li>
+                Отправка писем с данными на почту, Telegram, Google Docs
+              </li>
+              <li>Корректное отображение калькулятора на всех устройствах</li>
+            </ul>
+            <button class="button">Узнать подробнее</button>
+          </div>
+        </div>
+      </section>
+      <section class="quiz">
+        <h2>Стоимость</h2>
+        <div class="quiz__text">
+          <p>
+            Чтобы узнать предварительную цену разработки ответьте на несколько
+            вопросов.
+          </p>
+          <p>
+            После отправки квиза я свяжусь с Вами в ближайшее время для
+            уточнения деталей.
+          </p>
+        </div>
+        <form class="quiz__form" method="POST">
+          <div class="quiz__field opacity-0" id="quiz">
+            <div class="quiz__field-container">
+              <div class="quiz__conrainer">
+                <fieldset class="quiz__item">
+                  <p class="quiz__questions">Что нужно разработать?</p>
+                  <div class="quiz__items">
+                    <input id="1-1" type="radio" name="questions1" value="Калькулятор" data-price="3000" checked>
+                    <label for="1-1">Калькулятор</label>
+                    <input id="1-2" type="radio" name="questions1" value="Квиз (опрос)" data-price="3000">
+                    <label for="1-2">Квиз (опрос)</label>
+                  </div>
+                </fieldset>
+                <div class="quiz__info">
+                  <p>Предварительная стоимость разработки</p>
+                  <p><span>0</span> рублей</p>
+                </div>
+              </div>
+              <fieldset class="quiz__item block-hidden">
+                <p class="quiz__questions">Количесвто полей ввода</p>
+                <div class="quiz__items">
+                  <input checked id="2-1" type="radio" name="questions2" value="до 5" data-price="0">
+                  <label for="2-1">до 5</label>
+                  <div class="quiz__items-input quiz__items-input-row">
+                    <input id="2-2" type="radio" name="questions2" value="Более 5">
+                    <label for="2-2">Более 5</label>
+                    <input id="2-3" disabled type="text" placeholder="Введите количество" maxlength="30"
+                      name="var-user-quest2">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="quiz__item block-hidden">
+                <p class="quiz__questions">Требуется ли отправка данных?</p>
+                <div class="quiz__items">
+                  <input checked id="3-1" type="radio" name="questions3" value="Нет" data-price="0">
+                  <label for="3-1">Нет</label>
+                  <input id="3-2" type="radio" name="questions3" value="Да">
+                  <label for="3-2">Да</label>
+                  <div class="quiz__items-input">
+                    <input checked id="3-3" type="radio" name="questions3-1" value="Отправка данных на почту"
+                      data-price="1000">
+                    <label for="3-3">Отправка данных на почту</label>
+                    <input id="3-4" type="radio" name="questions3-1" value="Отправка данных и расчета в телеграм"
+                      data-price="1500">
+                    <label for="3-4">Отправка данных и расчета в телеграм</label>
+                    <input id="3-5" type="radio" name="questions3-1" value="Отправка в Google Документы"
+                      data-price="1500">
+                    <label for="3-5">Отправка в Google Документы</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="quiz__item block-hidden">
+                <p class="quiz__questions">Как будет происходить изменение исходных данных?</p>
+                <div class="quiz__items">
+                  <input checked data-radio id="4-1" type="radio" name="questions4" value="В коде" data-price="0">
+                  <label for="4-1">В коде</label>
+                  <input data-radio id="4-2" type="radio" name="questions4" value="В Google Таблицах" data-price="2500">
+                  <label for="4-2">В Google Таблицах</label>
+                </div>
+              </fieldset>
+              <fieldset class="quiz__item block-hidden">
+                <p class="quiz__questions">Трубуется ли установка на сайт?</p>
+                <div class="quiz__items">
+                  <input checked id="5-1" type="radio" name="questions5" value="Нет" data-price="0">
+                  <label for="5-1">Нет</label>
+                  <input id="5-2" type="radio" name="questions5" value="Да">
+                  <label for="5-2">Да</label>
+                  <div class="quiz__items-input">
+                    <input id="5-3" type="radio" name="questions5-1" value="Установка на сайт HTML" data-price="500"
+                      checked>
+                    <label for="5-3">Установка на сайт HTML</label>
+                    <input id="5-4" type="radio" name="questions5-1" value="Установка на сайт CMS" data-price="1500">
+                    <label for="5-4">Установка на сайт CMS</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="quiz__item block-hidden">
+                <p class="quiz__questions">Требования к дизайну</p>
+                <div class="quiz__items">
+                  <input id="6-1" type="checkbox" name="questions6" value="Стилизация под сайт" data-price="1000">
+                  <label for="6-1">Стилизация под сайт</label>
+                  <input id="6-2" type="checkbox" name="questions6-1" value="Верстка с макета" data-price="1000">
+                  <label for="6-2">Верстка с макета</label>
+                </div>
+              </fieldset>
+              <fieldset class="quiz__item block-hidden">
+                <p class="quiz__questions">Дополнительный функционал</p>
+                <div class="quiz__items">
+                  <input id="7-1" type="checkbox" name="questions7-1" value="Установка в модальном окне"
+                    data-price="1000">
+                  <label for="7-1">Установка в модальном окне</label>
+                  <input id="7-2" type="checkbox" name="questions7-2" value="Интерграция с другими сервисами"
+                    data-price="1000">
+                  <label for="7-2">Интерграция с другими сервисами</label>
+                  <input id="7-3" type="checkbox" name="questions7-3" value="Установка капчи перед отправкой"
+                    data-price="1500">
+                  <label for="7-3">Установка капчи перед отправкой</label>
+                  <input id="7-4" type="checkbox" name="questions7-4" value="Форма в всплывающем окне"
+                    data-price="1000">
+                  <label for="7-4">Форма в всплывающем окне</label>
+                </div>
+              </fieldset>
+              <fieldset class="quiz__item block-hidden">
+                <div class="quiz__items _contact">
+                  <p class="quiz__questions">Ваши контакты</p>
+                  <label for="name">Ваше имя</label>
+                  <input type="text" name="name" placeholder="Имя" maxlength="30" autocomplete="on">
+                  <label for="tel">Телефон</label>
+                  <input type="text" name="tel" placeholder="8 (___) ___-____" maxlength="30" required>
+                  <input class="location" name="location" type="text">
+                </div>
+              </fieldset>
+            </div>
+            <div class="quiz__control">
+              <div class="quiz__status">
+                <span class="quiz__status-current">1</span>
+                <span>/</span>
+                <span class="quiz__status-total">4</span>
+              </div>
+              <button class="quiz__prev">Назад</button>
+              <button data-next class="button quiz__next button_v2" type="button">Вперед</button>
+              <button class="button quiz__submit button_v2 block-hidden" type="submit">Отправить</button>
+            </div>
+            <p class="politica">Нажимая на кнопку "Отправить", я даю свое согласие на обработку
+              персональных
+              данных и принимаю <a href="html/politica.html">условия соглашения</a></p>
+          </div>
+        </form>
+      </section>
+      <section class="advantages">
+        <h2>Преимущества работы со мной</h2>
+        <p class="advantages__subtitle">
+          В отличии от веб студий мне не нужно платить зарплату сотрудникам, аренду офиса и прочие расходы. Что в
+          конечном счете отображается на стоимости создания сайта
+        </p>
+        <div class="advantages__content container">
+          <ul>
+            <li>
+              <h3>Дешевле чем конструкторы</h3>
+              <p>
+                В отличии от конструкторов у меня нет постоянной абоненствой
+                платы
+              </p>
+            </li>
+            <li>
+              <h3>Универсальность</h3>
+              <p>
+                Калькулятор, форма или опрос подойдет для любого сайта, будет
+                работать на любой CMS
+              </p>
+            </li>
+            <li>
+              <h3>Персональный подход</h3>
+              <p>
+                Общение в любое удобное время для Вас время и любыс способом
+                связи
+              </p>
+            </li>
+            <li>
+              <h3>Технологии</h3>
+              <p>Разработка с нуля. Без испрользования конструкторов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio"></section>
+      <section class="faq container">
+        <div class="faq__content container">
+          <h2>Ответы на частые вопросы</h2>
+          <details>
+            <summary>Что входит в 3000 тысячи рублей?</summary>
+            <ul>
+              <li>On-line калькулятор</li>
+              <li>До 5 полей ввода</li>
+              <li>До 5 переменных полями для ввода данных пользователем </li>
+              <li>1 выводом результата, без стилизации, без установки на Ваш сайт</li>
+              <li>Запуск и проверка (в том числе на адаптивность к моб. устройствам)</li>
+              <li>Видео инструкция по самостоятельному редактированию калькулятора (как изменить цену или картинку)</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Что необходимо для заказа</summary>
+            <p>
+            <ul>
+              <li>Формулы расчета и описание функционала (логика расчета)</li>
+              <li>Необходимые поля ввода</li>
+              <li>Необходимый вывод итогов</li>
+              <li>Ссылка на сайт на который планируется внедрение калькулятора</li>
+              <li>Нужна ли установка на Ваш сайт или сможете установить самостоятельно</li>
+              <li>Ссылки на сайты с примерами подобных калькуляторов</li>
+              <li>Дополнительные пожелания по возможности дальнейшего редактирования, дизайну, функционалу</li>
+              <li>Движок сайта на который устанвливается калькулятор</li>
+            </ul>
+            </p>
+          </details>
+          <details>
+            <summary>Какие технологии буду использованы при создании модлуя?</summary>
+            <p>
+              Калькулятор будет написан на нативном Javascript. В зависимости от задачи возможно применение PHP.</p>
+            <p>Калькулятор может быть изготовлен как:
+            <ul>
+              <li>просто код JS/HTML/CSS для любого сайта</li>
+              <li>плагин для Wordpress</li>
+              <li>шорткод для Wordpress</li>
+            </ul>
+            </p>
+          </details>
+          <details>
+            <summary>Дизайн</summary>
+            <p>Дизайн может быть выполнен:</p>
+            <ul>
+              <li>Без дизайна, просто элементы будут аккуратно расположены</li>
+              <li>По вашему макету</li>
+              <li>Копия аналогичного калькулятора</li>
+              <li>Согласно стилистике вашего сайта</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__content opacity-0">
+          <h2>Остались вопросы? </h2>
+          <p class="feedback__text">Оставьте свой контакты и мы свяжемся с Вами в ближайшее
+            время</p>
+          <form data-form method="POST">
+            <fieldset>
+              <input type="text" placeholder="Имя" name="name" maxlength="30" autocomplete="on">
+              <input type="text" placeholder="8 (___) ___-____*" name="tel" required>
+            </fieldset>
+            <button class="button" type="submit">Отправить</button>
+            <input class="location" name="location" type="text">
+            <p class="politica">Нажимая на кнопку "Отправить", я даю свое согласие на обработку персональных
+              данных и принимаю <a href="html/politica.html">условия соглашения</a></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+</body>
+
+</html>

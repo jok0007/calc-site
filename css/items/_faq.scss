@@ -1,0 +1,27 @@
+.faq {
+  margin: 0px auto 120px;
+  // .faq__content
+
+  &__content {
+    & details {
+      margin: 0px 0px 20px 0px;
+      & summary {
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-size: var(--font-size-20);
+        color: var(--color-title);
+      }
+      & p {
+        margin: 0px 0px 0px 20px;
+      }
+      & ul {
+        margin: 0px 0px 0px 20px;
+
+        & li {
+          list-style: inside;
+          color: var(--color-title);
+        }
+      }
+    }
+  }
+}

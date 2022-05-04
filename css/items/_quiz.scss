@@ -1,0 +1,209 @@
+.quiz {
+  margin: 0px auto 120px;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & label {
+    font-family: var(--font-family);
+    margin: 0px 0px 20px 0px;
+  }
+
+  & input[type="radio"],
+  & input[type="checkbox"] {
+    display: none;
+  }
+
+  & input[type="text"] {
+    font-family: var(--font-family);
+    padding: 5px 10px;
+    border: 1px var(--color-text) solid;
+    border-radius: 2px;
+    max-width: 180px;
+  }
+
+  & input[type="radio"] + label {
+    position: relative;
+    padding: 0px 0px 0px 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border: 1px var(--color-text) solid;
+      border-radius: 50%;
+    }
+  }
+
+  & input[type="radio"]:checked + label {
+    &::before {
+      background-color: #9effe4;
+      border: 1px var(--color-accent) solid;
+    }
+  }
+
+  & input[type="checkbox"] + label {
+    position: relative;
+    padding: 0px 0px 0px 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border: 1px var(--color-text) solid;
+      border-radius: 2px;
+    }
+  }
+
+  & input[type="checkbox"]:checked + label {
+    &::before {
+      border: 1px var(--color-accent) solid;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.83337 5.5L4.58337 8.25L9.16671 2.75' stroke='%2314EDB0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // .quiz__text
+
+  &__text {
+    margin: 0px 0px 40px 0px;
+    & p {
+      text-align: center;
+      font-size: var(--font-size-14);
+      color: var(--color-text);
+    }
+  }
+
+  // .quiz__form
+
+  &__form {
+  }
+
+  // .quiz__field
+
+  &__field {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  // .quiz__field-container
+
+  &__field-container {
+  }
+
+  &__conrainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    & p {
+      text-align: center;
+
+      & span {
+        font-size: var(--font-size-20);
+      }
+      &:first-child {
+        font-size: var(--font-size-20);
+        max-width: 190px;
+        margin: 0px 0px 40px 0px;
+      }
+    }
+  }
+
+  // .quiz__item
+
+  &__item {
+    height: 300px;
+  }
+
+  // .quiz__questions
+
+  &__questions {
+    font-size: var(--font-size-20);
+    margin: 0px 0px 40px 0px;
+  }
+
+  // .quiz__items
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .quiz__items-input
+
+  &__items-input {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 30px;
+  }
+
+  &__items-input-row {
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+
+    & label {
+      margin: 0px 20px 0px 0px;
+    }
+  }
+
+  // .quiz__control
+
+  &__control {
+  }
+
+  // .quiz__status
+
+  &__status {
+  }
+
+  // .quiz__status-current
+
+  &__status-current {
+  }
+
+  // .quiz__status-total
+
+  &__status-total {
+  }
+
+  // .quiz__prev
+
+  &__prev {
+  }
+
+  // .quiz__next
+
+  &__next {
+  }
+
+  // .quiz__submit
+
+  &__submit {
+  }
+}
+.block-hidden {
+}
+
+.location {
+  display: none;
+}
+._contact {
+  & input[type="text"] {
+    margin: 0px 0px 40px 0px;
+  }
+}
+.politica {
+}

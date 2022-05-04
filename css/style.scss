@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Mallanna&family=Montserrat:wght@400;500;600;700&display=swap");
+
+@import "./items/_root";
+
+.container {
+  max-width: 1460px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+}
+
+@import "./items/_min";
+@import "./items/_h";
+@import "./items/_btn";
+@import "./items/_header_top";
+@import "./items/_header.scss";
+@import "./items/_about";
+@import "./items/_opportunities.scss";
+@import "./items/_quiz.scss";
+@import "./items/_advantages.scss";
+@import "./items/_portfolio";
+@import "./items/_faq";
+@import "./items/_feedback";

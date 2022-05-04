@@ -1,0 +1,91 @@
+.header {
+    &__top-contant {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .header__top
+
+    &__top {
+        background-image: linear-gradient(90deg, #c6ebea 0%, #e5f1f1 100%);
+    }
+
+    // .header__top-burger
+
+    &__top-burger {
+        width: 30px;
+        height: 30px;
+        border: 2px var(--color-black) solid;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            top: 8px;
+            left: 3px;
+            background-color: var(--color-black);
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            bottom: 7px;
+            left: 3px;
+            background-color: var(--color-black);
+        }
+    }
+
+    &__top-burger-open {
+        &::after {
+            top: 12px;
+            transform: rotate(-45deg);
+        }
+        &::before {
+            bottom: 12px;
+            transform: rotate(45deg);
+        }
+    }
+
+    // .header__top-menu
+
+    &__top-menu {
+        flex: 1 1 auto;
+        & ul {
+            display: flex;
+            & li {
+                &:not(:last-child) {
+                    margin: 0px 20px 0px 0px;
+                }
+
+                & a {
+                    font-size: 1rem;
+                    color: var(--color-dark-gray);
+                    transition: filter var(--time-trans) ease;
+                    @media (any-hover: hover) {
+                        &:hover {
+                            filter: brightness(75%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // .header__top-phone
+
+    &__top-phone {
+        color: var(--color-dark-gray);
+        transition: filter var(--time-trans) ease;
+        @media (any-hover: hover) {
+            &:hover {
+                filter: brightness(95%);
+            }
+        }
+    }
+}
